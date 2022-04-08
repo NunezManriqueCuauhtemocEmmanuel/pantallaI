@@ -1,0 +1,10 @@
+@font-face{
+    font-family: 'happy';
+    src: url(../font/Zeniq.ttf);
+}
+#titulo{
+    /* font-family: 'happy'; */
+    font-size: 72px;
+    /* color: rgb(255, 255, 255); */
+    /* text-shadow: 4px 4px 4px rgb(5, 25, 78); */
+}

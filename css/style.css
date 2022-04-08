@@ -4,74 +4,113 @@
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+html{
+    background: #e6eaff;
+}
 body{
     /* background:url(https://static.vecteezy.com/system/resources/previews/001/308/866/non_2x/beautiful-calm-night-with-moon-over-lake-vector.jpg); */
-    background: #02040a;
+    /* background: #02040a; */
+    background: url(../img/fondocuadros.svg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 header{
-    animation: slideInDown;
-    animation-duration: 0.5s; 
-    text-align: center;
     position: fixed;
     top:0; left:0;
     width: 100%;
-    background: rgba(9, 33, 98, 0.2);
+    background: rgb(2, 39, 119);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
-    padding: 10px 0px;
-    z-index: 1000;
-    transition: all 500ms ease;
+    padding: 20px 9%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    z-index: 1000;
+    animation: slideInDown;
+    animation-duration: 0.5s; 
+    transition: all 500ms ease;
 }
-.virtual{
-    font-size: 36px;
-    color: white;
-    font-weight: 900;
+
+header .logo{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #3d6fdb;
+}
+header .logo span{
+    color: rgb(231, 231, 231);
+}
+header .navbar a{
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    color: rgb(255, 255, 255);
+}
+header .navbar .spectre{
+    font-size: 1rem;
+    margin-left: 2rem;
+    color: rgb(171, 138, 226);
+}
+header .navbar a:hover{
+    color: var(--bluel);
+}
+header .navbar .spectre:hover{
+    color:rgb(255, 255, 255);
+}
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: var(--bluel);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
 }
 img{
     width: 75px;
     position: relative;
     margin: 0 17%;
 }
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* background: linear-gradient(to bottom, #f1f4f9, #dff1ff); */
+.wrapper{
+    display: inline-flex;
+    margin-top: 25px;
 }
-section .color{
-    position: fixed;
-    filter: blur(150px);
+.wrapper .static-txt{
+    color: #B5B5B5;
+    font-size: 48px;
+    font-weight: 600;
 }
-  
-section .color:nth-child(1){
-    top: -350px;
-    width: 800px;
-    height: 800px;
-    background: #1c3783;
-    animation: fondo1 7000ms alternate-reverse;
+.wrapper .dynamic-txts{
+    margin-left: 10px;
+    text-align: left;
+    line-height: 60px;
+    height: 60px;
+    overflow: hidden;
 }
-  
-section .color:nth-child(2){
-    bottom: -50px;
-    left: 100px;
-    width: 550px;
-    height: 550px;
-    background: #572f85;
-    animation: fondo 7000ms alternate-reverse;
+.dynamic-txts li{
+    list-style: none;
+    font-size: 48px;
+    font-weight: 600;
+    color: #14245B;
+    position: relative;
+    top: 0;
+    animation: slide 20s steps(1) infinite;
 }
-  
-section .color:nth-child(3){
-    bottom: 50px;
-    right: 100px;
-    width: 500px;
-    height: 500px;
-    background: #572f85;
-    animation: fondo 7000ms alternate-reverse;
+.dynamic-txts li span{
+    position: relative;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #e6eaff;
+    border-left: 2px solid #343f4f;
+    animation: typing 5s steps(10) infinite;
 }
 .box{
     left: 0;
@@ -98,7 +137,7 @@ section .color:nth-child(3){
 .btn-two {
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #FFF;
+    color: rgb(33, 15, 67);
     transition: all 0.5s;
     position: relative; 
 }
@@ -119,7 +158,7 @@ section .color:nth-child(3){
     height: 100%;
     z-index: 1;
     transition: all 0.5s;
-    background-color: rgba(255,255,255,0.1);
+    background-color: #D7DDED80;
 }
 .btn-two::after {
     border-radius: 10px;
@@ -131,7 +170,7 @@ section .color:nth-child(3){
     height: 100%;
     z-index: 1;
     transition: all 0.5s;
-    background-color: rgba(255,255,255,0.1);
+    background-color: #D7DDED80;
 }
 .btn-two:hover::before {
     transform: rotate(-25deg);
@@ -140,14 +179,14 @@ section .color:nth-child(3){
 }
 .btn-two:hover::after {
     transform: rotate(25deg);
-    background-color: rgba(255,255,255,0.1);
+    background-color: #D7DDED80;
 }
 
 
 .btn-3 {
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #FFF;
+    color: rgb(51, 25, 93);
     transition: all 0.5s;
     position: relative; 
 }
@@ -168,7 +207,7 @@ section .color:nth-child(3){
     height: 100%;
     z-index: 1;
     transition: all 0.5s;
-    background-color: rgba(255,255,255,0.1);
+    background-color: #D7DDED80;
 }
 .btn-3::after {
     border-radius: 10px;
@@ -180,11 +219,11 @@ section .color:nth-child(3){
     height: 100%;
     z-index: 1;
     transition: all 0.5s;
-    background-color: rgba(255,255,255,0.1);
+    background-color: #D7DDED80;
 }
 .btn-3:hover::before {
     transform: rotate(-25deg);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #D7DDED80;
 }
 .btn-3:hover::after {
     transform: rotate(25deg);
@@ -193,14 +232,26 @@ section .color:nth-child(3){
 }
 
 h1{
-    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #282C33;
     font-size: 84px;
 }
 .dis{
     margin-top: 30px;
-    color: #e0e0e0;
+    color: #9b9b9b;
     font-weight: 900;
     font-size: 20px;
+}
+@keyframes slide{
+    100%{
+        top: -240.5px;
+    }
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
 }
 @keyframes fondo1{
     0%, 100%{
@@ -218,3 +269,4 @@ h1{
         background: #1c3783;
     }
 }
+
