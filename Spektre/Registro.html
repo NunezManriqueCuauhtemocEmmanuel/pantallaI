@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../img/logoSV.ico">
+    <title>Registro Spektre</title>
+    <link rel="stylesheet" href="../css/Spectre/Registro.css">
+</head>
+<body>
+    <section class="contenedor">
+        <section class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <img src="../img/logo_small_icon_only.svg" width="50%">
+                <a href="../index.html" class="logo"><span>Virtual</span>Gadget</a>
+            </div>
+            <div class="sidebar-menu">
+                <a href="../Spektre/Registro.html"><div class="boton">Registro</div></a>
+                <div class="boton">Alumnos</div>
+                <div class="boton">Profesores</div>
+                <div class="boton">Administrador</div>
+            </div>
+        </section>
+        <div class="contenido">
+            <div class="container">
+                <div class="form" (ngSubmit)="onSubmit()" [formGroup]="form">
+                  <h2>Registro</h2>
+                  <form>
+                    <div class="inputBox">
+                      <input formControlName="usuario" type="text" placeholder="Usuario" required>
+                    </div>
+                    <div class="inputBox">
+                      <input formControlName="contraseña" type="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="inputBox">
+                      <input formControlName="name" type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="inputBox">
+                      <input formControlName="apellidop" type="text" placeholder="Apellido Paterno" required>
+                    </div>
+                    <div class="inputBox">
+                      <input formControlName="apellidom" type="text" placeholder="Apellido Materno" required>
+                    </div>
+                    <div class="inputBox">
+                      <input formControlName="email" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="inputBox">
+                      <input formControlName="fechaNac" type="date" placeholder="Fecha de nacimiento" required>
+                    </div>
+                    <div class="inputeBox">
+                        <input type="checkbox" name="politicas" id="politicas" required> Acepto terminos y politicas de privacidad
+                    </div>
+                    <p class="forget">Conoce nuestras <a routerLink="/auth/politics">Politicas de Privacidad</a></p>
+                    <div class="inputBox">
+                      <input type="submit" value="Registrar">
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 body{
-    background-image: linear-gradient(to left, #7EBCF5,#3957ED);
+    background-image: linear-gradient(to left, #5ea1e0,#1f57d1);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     background-attachment: fixed; 
@@ -98,7 +98,7 @@ header label{
     transition: all 500ms ease;
 }
 .home img:hover{
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 
 /*Somos*/
