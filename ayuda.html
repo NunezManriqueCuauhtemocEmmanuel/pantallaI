@@ -88,7 +88,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <h3 class="titu">Carga</h3>
+                        <div class="algo">
+                            <img src="./img/icons/spinner.svg" width="100px">
+                            <h3 class="titu">Carga</h3>
+                        </div>
                         <div class="content">
                             <h2>04</h2>
                             <h3>Problemas conocidos</h3>
@@ -101,7 +104,10 @@
                         </div>
                     </div>
                     <div class="card">
-                        <h3 class="titu">Nueva problematica</h3>
+                        <div class="algo">
+                            <img src="./img/icons/circle-exclamation-solid.svg" width="100px">
+                            <h3 class="titu">Nueva problematica</h3>
+                        </div>
                         <div class="content">
                             <h2>05</h2>
                             <h3>Ayudanos</h3>
@@ -120,10 +126,13 @@
 
                 <div class="container">
                     <div class="card">
-                        <h3 class="titu">Profesor</h3>
+                        <div class="algo">
+                            <img src="./img/icons/chalkboard-user-solid.svg" width="100px">
+                            <h3 class="titu">Profesor</h3>
+                        </div>
                         <div class="content">
                             <h2>01</h2>
-                            <h3>Card one</h3>
+                            <h3>Preguntas comunes</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi error, 
                                 aliquid sequi totam doloremque cumque odit provident aut dicta.
                             </p>
@@ -131,10 +140,13 @@
                         </div>
                     </div>
                     <div class="card">
-                        <h3 class="titu">Alumno</h3>
+                        <div class="algo">
+                            <img src="./img/icons/user-graduate-solid.svg" width="100px">
+                            <h3 class="titu">Alumno</h3>
+                        </div>
                         <div class="content">
                             <h2>02</h2>
-                            <h3>Card two</h3>
+                            <h3>Preguntas comunes</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi error, 
                                 aliquid sequi totam doloremque cumque odit provident aut dicta.
                             </p>
@@ -142,10 +154,13 @@
                         </div>
                     </div>
                     <div class="card">
-                        <h3 class="titu">Administrador</h3>
+                        <div class="algo">
+                            <img src="./img/icons/user-gear-solid.svg" width="100px">
+                            <h3 class="titu">Administrador</h3>
+                        </div>
                         <div class="content">
                             <h2>03</h2>
-                            <h3>Card three</h3>
+                            <h3>Preguntas comunes</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi error, 
                                 aliquid sequi totam doloremque cumque odit provident aut dicta.
                             </p>
@@ -163,41 +178,62 @@
             <!--Registro-->
 
             <section class="registro" id="registro">
-                <div class="zona">
-                    <h2>Registro</h2>
-                </div>
-                <div class="r1">
-                    <h3>No permite registro por error en algun campo</h3>
-                    <br>
-                    <p>Corrobora que todos los campos esten cubiertos y cumplan con las caracterisiticas que se presentan a continuación</p>
-                    <br>
-                    <div class="campos">
-                        <div class="c1">
-                            <span>Campo Nombre:</span>
-                            <p>El campo nombre no permite el ingreso de caracteres especiales y numericos, unicamente se 
-                                puede registrar un nombre si contiene [a-z] y [A-Z] (letras en minusculas y mayusculas), con una extensión limitada.</p>
-                            <br>
-                            <p>Si no puedes registrarte por este campo, prueba:</p>
-                            <br>
-                            <ul>
-                                <li>Corroborar que no se ingresaron caracteres numericos</li>
-                                <li>Corroborar que no se ingresaron caracteres especiales</li>
-                                <li>Verificar que no se superaron los 50 caracteres</li>
-                                <li>Verificar que no se ingresó menos de 3 caracteres</li>
-                            </ul>
+                <h2>Registro</h2>
+                <p>A continuación te presentamos los problemas que fueron detectados y te pueden
+                   suceder al utilizar esta sección, sigue las alternativas que hay en cada uno de los casos
+                   para solucionar tu problema, en caso de que este persista, contactanos
+                </p>
+                <div class="quejas">
+                    <div class="cont">
+                        <div class="zona">
+                            <h3>No permite registro por error en algun campo</h3>
                         </div>
-                        <div class="c2">
-                            <p><span>Campo Nombre:</span> El campo nombre no permite el ingreso de caracteres especiales y numericos, unicamente se 
-                            puede registrar un nombre si contiene [a-z] y [A-Z] (letras en minusculas y mayusculas), con una extensión limitada.</p>
-                            <br>
-                            <p>Si no puedes registrarte por este campo, prueba:</p>
-                            <br>
-                            <ul>
-                                <li>Corroborar que no se ingresarón caracteres numericos</li>
-                            </ul>
+                        <div class="r1">
+                            <p>Los campos dentro del registro no aceptan ciertos formatos de caracteres,
+                                asi mismo solo se puede ingresar una cantidad de caracteres limitados,
+                                por lo que se recomienda lo siguiente:
+                            </p>
+                            <h4>Alternativa 1</h4>
+                            <p>Si el error esta en los campos <span>Nombre</span>, <span>Apellido Paterno</span>
+                                o <span>Apellido Materno</span>, verifica que no ingresaste caracteres especiales 
+                                o numericos
+                            </p>
+                            <h4>Alternativa 2</h4>
+                            <p>Si el error esta en el campo <span>Email</span>, verifica que ingresaste el simbolo @ y que 
+                                no hay espacios entre los caracteres.
+                            </p>
+                            <h4>Alternativa 3</h4>
+                            <p>A excepción de los campos <span>Email</span> y <span>Contraseña</span>, todos los restantes 
+                                tienen un limite de caracteres que es mínimo 3 y máximo 5 caracteres, verifica que cada dato 
+                                esta dentro del limite
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <div class="zona">
+                            <h3>No permite el registro aun con campos completos</h3>
+                        </div>
+                        <div class="r1">
+                            <p>Los campos dentro del registro no permiten avanzar el proceso en caso de que el dato ingresado
+                                no cumpla con las características que cada uno solicita, en caso de que los datos esten correctos 
+                                y no se procese la solicitud, se recomienda lo siguiente: 
+                            </p>
+                            <h4>Alternativa 1</h4>
+                            <p>Verifica que tu conexión de internet permita la transferencia de datos, en caso de que la velocidad 
+                                de tu servicio de internet no sea la optima, se recomienda posponer el registro hasta que su servico se 
+                                haya regulado
+                            </p>
+                            <h4>Alternativa 2</h4>
+                            <p>Verifica que el campo <span>Acepto politicas y terminos de uso</span> este seleccionado, de lo contrario
+                                no se permitira continuar. <span>Importante, lee las politicas de privacidad y terminos de uso para el
+                                conocimiento de como manejamos tus datos dentro de la aplicación</span>
+                            </p>
                         </div>
                     </div>
                 </div>
+                <p>Despues de realizar tu registro debes recibir un correo con el usuario y contraseña que registrarste, no lo elimines
+                    ya que te puede ser util en caso de uqe no recuerdes estos datos
+                 </p>
             </section>
 
             <!--Inicio de sesion-->

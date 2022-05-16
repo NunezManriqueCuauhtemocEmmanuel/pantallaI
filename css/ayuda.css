@@ -201,7 +201,21 @@ header span{
 
 /*Registro*/
 /* #637888 */
-.registro{
+.registro h2{
+    margin-top: 30px;
+    text-align: center;
+}
+.registro p{
+    padding: 10px 70px;
+}
+.quejas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    width: 40%;
+    min-height: 550px;
     overflow: hidden;
     border-radius: 10px;
     margin: 20px 10px;
@@ -217,29 +231,29 @@ header span{
 .campos{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
-.r1{
-    padding: 20px 70px;
+.r1 p{
+    text-align: justify;
+    padding: 20px;
 }
 .r1 span{
-    font-weight: bolder;
+    font-weight: 500;
     font-style: italic;
 }
-.c1{
-    background: #a8a8a8;
-    text-align: justify;
-    width: 350px;
-    height: 700px;
-    margin: 10px;
+.r1 h4{
+    padding: 0px 20px;
 }
-.c2{
-    text-align: justify;
-    width: 350px;
-    height: 700px;
-    margin: 10px;
+
+/*login*/
+
+.login h2{
+    margin-top: 30px;
+    text-align: center;
 }
+.login p{
+    padding: 10px 70px;
+}
+
 /*footer*/
 
 .footer{
