@@ -221,11 +221,11 @@ header span{
     margin: 20px 10px;
     transition: 0.5s;
     background: white;
-    border: 1px solid #5C4590;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
 }
 .zona{
     padding: 20px 70px;
-    background: #5C4590;
+    background: #1e2237;
     color: white;
 }
 .campos{
@@ -253,7 +253,47 @@ header span{
 .login p{
     padding: 10px 70px;
 }
+.login .quejas .cont .zona{
+    padding: 20px 70px;
+    background: #484e77;
+    color: white;
+}
+.login .quejas .cont .r1 p{
+    padding: 20px;
+}
 
+/*Interfaz*/
+.interfaz h2{
+    margin-top: 30px;
+    text-align: center;
+}
+.interfaz p{
+    padding: 10px 70px;
+}
+.interfaz .quejas .cont .zona{
+    padding: 20px 70px;
+    background: #7a82c1;
+    color: white;
+}
+.interfaz .quejas .cont .r1 p{
+    padding: 20px;
+}
+/*Casos*/
+.carga h2{
+    margin-top: 30px;
+    text-align: center;
+}
+.carga p{
+    padding: 10px 70px;
+}
+.carga .quejas .cont .zona{
+    padding: 20px 70px;
+    background: #b2baff;
+    color: white;
+}
+.carga .quejas .cont .r1 p{
+    padding: 20px;
+}
 /*footer*/
 
 .footer{
