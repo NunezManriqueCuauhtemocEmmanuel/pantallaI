@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 body{
-    background-image: linear-gradient(to left, #5ea1e0,#1f57d1);
+    background-image: linear-gradient(to left, #5ea1e0,#1f57d1); 
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     background-attachment: fixed; 
@@ -64,6 +64,9 @@ header label{
     opacity: 0;
 }
 /*Bienvenida*/
+.bienvenida{
+    background-image: linear-gradient(to left, #5ea1e0,#1f57d1); 
+}
 .home{
     position: relative;
     display: flex;
@@ -81,14 +84,14 @@ header label{
     position: relative;
     font-size: 80px;
     text-align: center;
-    color: #112653;
+    color: #1647af;
     /*animacion entrada*/
     animation: bounceInRight;
     animation-duration: 1s; 
     transition: all 500ms ease;
 }
 .home .text span{
-    color: white;
+    color: rgb(224, 232, 255);
 }
 .home img{
     position: relative;
@@ -451,6 +454,9 @@ header label{
 
 
 /*Mascota*/
+.mascota{
+    width: 100%;
+}
 .save{
     display: flex;
     align-items: center;
@@ -459,6 +465,7 @@ header label{
     margin: 50px;
 }
 .save .tx{
+    width: 40%;
     margin: 50px;
 }
 /*Footer*/
